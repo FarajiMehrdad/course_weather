@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:padding="16dp"
+              android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/day_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saturday"
+        android:padding="8dp"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/day_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBaseline="@+id/day_tv"
+        />
+
+
+</RelativeLayout>

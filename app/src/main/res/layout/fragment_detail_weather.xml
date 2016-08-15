@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Yellow_Orange">
+
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleverland, OH"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="condit"
+        android:layout_toLeftOf="@+id/city_name_tv"
+        android:layout_alignBaseline="@+id/city_name_tv"
+        android:padding="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/weather_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At 5:18 AM it will be"
+        android:layout_below="@id/city_name_tv"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/temp_weather_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="88"
+        android:layout_below="@id/weather_time_tv"
+        android:layout_centerHorizontal="true"
+        android:textSize="70sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignLeft="@+id/detail_holder"
+        android:layout_alignRight="@+id/detail_holder"
+        android:gravity="center"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/detail_holder"
+        android:layout_below="@id/temp_weather_tv"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/humidity_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:layout_below="@id/humidity"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/rain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:padding="8dp"
+            android:layout_toRightOf="@+id/humidity"
+            />
+
+        <TextView
+            android:id="@+id/rain_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:layout_below="@id/humidity"
+            android:padding="8dp"
+            android:layout_toRightOf="@+id/humidity"
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/weather_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="humidity"
+        android:layout_below="@id/detail_holder"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+
+        />
+
+
+
+
+</RelativeLayout>
